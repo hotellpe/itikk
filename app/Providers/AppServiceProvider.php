@@ -97,8 +97,10 @@ class AppServiceProvider extends ServiceProvider
 	private function setupHttps()
 	{
 		// Force HTTPS protocol
-		if (config('larapen.core.forceHttps')) {
-			URL::forceScheme('https');
+		if(env('APP_ENV') == 'production'){
+			if (config('larapen.core.forceHttps')) {
+				URL::forceScheme('https');
+			}
 		}
 	}
 }
