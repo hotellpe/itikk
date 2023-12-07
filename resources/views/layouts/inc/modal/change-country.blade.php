@@ -25,7 +25,7 @@
 								@endphp
 								<img src="{{ url('images/blank.gif') . getPictureVersion() }}"
 									 class="flag flag-{{ $country->get('icode') }}"
-									 style="margin-bottom: 4px; margin-right: 5px;"
+									 style="margin-bottom: 4px; margin-right: 5px;" alt="nightp"
 								>
 								<a href="{{ $countryUrl }}" data-bs-toggle="tooltip" data-bs-custom-class="modal-tooltip" title="{{ $country->get('name') }}">
 									{{ str($country->get('name'))->limit(21) }}

@@ -3,3 +3,4 @@ storage/*.key
 vendor
 /public/storage
 public/storage
+storage
